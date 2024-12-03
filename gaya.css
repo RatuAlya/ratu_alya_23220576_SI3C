@@ -1,0 +1,172 @@
+body{
+    background-color: aliceblue;
+}
+
+.container{
+    border: 20px solid  aliceblue;
+    display: grid;
+    grid-template-areas:"header header header header"
+                        "nav main main main"
+                        "nav aside section section2"
+                        "nav footer footer footer" ;
+    grid-template-columns: 1fr 1.2fr 0.8fr 1fr;
+    grid-template-rows: 0.1fr 1.5fr 1.5fr 0.3fr;
+    
+}
+
+
+header{
+    margin: 10px;
+    grid-area: header;
+    background-color: aliceblue;
+    display: flex;
+    border-radius: 5px;
+    float: right;
+}
+header h1{
+    border-radius: 5px;
+    color:mediumblue ;
+}
+header input{
+    margin-left: 1000px;
+    margin-top: 25px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+nav{
+    margin: 10px;
+    grid-area: nav;
+    background-color:mediumblue;
+    border-radius: 5px;
+    padding: 100px 0;
+}
+nav a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+nav a:hover {
+    color: white;
+    background-color:darkblue;
+}
+
+
+aside{
+    grid-area: aside;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+aside h3{
+    margin: 20px;
+    text-align: left;
+}
+aside img{
+    align:center
+}
+
+
+
+main{
+    margin: 10px;
+    border-radius: 5px;
+    grid-area: main;
+    background-color:mediumblue;
+    padding: 10px;
+    display: flex;
+    float: right;
+    height: 200px;
+}
+.kenal h2{
+    color: rgb(255, 255, 255);
+}
+.kenal p{
+    color: rgb(255, 255, 255);
+    
+}
+.foto{
+    margin-left: 100px;
+    margin-top: 25px;
+    border-radius: 5px;
+    height: 30px;
+}
+main img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+
+
+section{
+    margin: 10px;
+    grid-area: section;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.s1{
+    background-color:  aliceblue;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 1px;
+}
+.s1 h4{
+    margin: 5px;
+}
+.s1 p{
+    color: rgb(52, 98, 185);
+    align-items: center;
+}
+section2{
+    margin: 10px;
+    grid-area: section2;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.s2{
+    background-color:  aliceblue;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 1px;
+}
+.s2 h4{
+    margin: 5px;
+}
+.s2 p{
+    color: rgb(52, 98, 185);
+    align-items: center;
+}
+
+
+
+footer{
+    margin: 10px;
+    grid-area: footer;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+footer h3{
+    margin: 15px;
+}
+.f{
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+}
+.f p{
+    margin: 10px;
+    padding: 5px;
+}
+.f a{
+    margin: 50px;
+}
